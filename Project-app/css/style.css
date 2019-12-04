@@ -1,0 +1,33 @@
+.mycontainer{
+  border: 13px solid #981e32;
+}
+
+.myrow{
+  border: 3px solid blue;
+}
+.mycol{
+  border: 2px dotted blue;
+}
+
+.navbar-custom{
+	background-image: url(../assets/nav-bar-yellow.png);
+	background-repeat: no-repeat;
+}
+
+.navbar-brand{
+	margin-right : 40px;
+}
+
+.navbar-custom .navbar-nav .nav-link{
+	color: : #ffffff;
+}
+
+
+.headerimg{
+	background-image: url(../assets/header-bg-red.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
