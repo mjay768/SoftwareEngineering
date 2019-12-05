@@ -1,0 +1,27 @@
+.mycontainer{
+  border: 13px solid #981e32;
+}
+
+.myrow{
+  border: 3px solid blue;
+}
+.mycol{
+  border: 2px dotted blue;
+}
+
+.navbar{
+	background-color: #eeae00 !important;
+
+}
+
+.navbar .navbar-nav .nav-link{
+	color: #ffffff !im;
+}
+
+.navbar-brand{
+	margin-right : 40px
+}
+
+.headerimg{
+	background-image: url(../assets/header-bg-red);
+}
