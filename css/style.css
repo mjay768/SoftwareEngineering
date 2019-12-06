@@ -1,0 +1,84 @@
+html. body {
+	height: 100%;
+	width: 100%;
+
+}
+
+.navbar-custom{
+	background-color: #eaab00 !important;
+	background-repeat: no-repeat;
+	font-size: 1.2em;
+	padding: 1% 0;
+	width: 100%;
+}
+
+.navbar-brand{
+	padding: 0 15px 5px;
+}
+
+.navbar-custom .navbar-nav li a {
+	color: #D5D5D5;
+}
+
+.navbar-custom .navbar-nav li a:hover, .navbar-custom .navbar-nav li a.active{
+	color: #FFF;
+}
+
+#home {
+	background: url(../assets/header-bg-red.png);
+	display: table;
+	width: 100%;
+	padding: 100px;
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: cover;
+}
+
+.landing-text {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: #ffffff;
+}
+
+.landing-text h1 {
+	font-size: 500%;
+	font-weight: 700%;
+}
+
+.padding{
+	padding: 80px 0;
+
+}
+
+.header-2 {
+	background-color: #a43234;
+	margin-top: 0px;
+	position: relative;
+}
+.header-3 {
+	height: 360%;
+	background-color: #eeeeee;
+	margin-top: 0px;
+	padding: 60px;
+
+}
+
+h1,h2,h3,h4,p {
+	color: #FFFFFF;
+}
+
+.editor-section {
+	padding: 0px;
+	margin: 50px;
+	margin-top: 10px; 
+}
+
+.buttons-1 {
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.footer-bg {
+	background-color: #444444;
+}
