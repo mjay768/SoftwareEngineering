@@ -20,6 +20,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
+    <!-- Links from the original project -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/codemirror.css">
+    <script src="js/syntaxCheck.js"></script>
+    <script src="js/codemirror.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/asmcompiler.js"></script>
 
         <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom navbarimg">
@@ -43,6 +51,7 @@
           <li class="nav-item active">
             <a class="nav-link text-white" href="#">Documentation</a>
           </li> 
+          
         </ul>
       </div>
     </div>
@@ -51,15 +60,15 @@
     <!-- Comp Sci 2700 section -->
     </nav>
     <div class="headerimg" id="home">
-      <div class="landing-text ">
+      <div class="landing-text">
         <h1>CS 2700</h1>
-        <h3>Online ASM Compiler</h3>
+        <h3>Online ASM Interpreter</h3>
       </div>
     </div>
 
 
     <!-- Getting Started section -->
-
+<div class="padding header-2 ">
     <div id="getstarted" class="padding">
       <div class="container-fluid">
         <!-- <div class="landing-text" >
@@ -70,7 +79,7 @@
                                         4. Output will be displayed in the Output box.</p>
       </div> -->
 
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-sm-6 text-center">
               <h1>Getting Started</h1>
@@ -86,24 +95,143 @@
         </div>
       </div>
     </div>
-
+</div>
     <!-- End of Getting Started -->
 
+<div class="header-3">
+  <div class="container-fluid editor-section" >
+    <div class="row header">
+      <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+          <div class="row">
+            <div class="form-group green-border-focus editor-section">
+            <label class="lead" for="exampleFormControlTextArea4">Editor:</label>
+            <textarea id="editor-box" oninput="syntaxCheck()" onkeyup="backspaceCheck(editor, event)" class="form-control" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="row" style="margin-left: 35px">
+            <button type="button" class="btn btn-primary buttons-1" >Run</button>
+            <button type="button" class="btn btn-secondary buttons-1">Upload</button>
+            <button type="button" class="btn btn-secondary buttons-1">Download</button>
+          </div>
+      </div>
+      <div class="col-md-4" style="margin-top: 50px">
+        <div class="row">
+          <div class="input-group input-group-lg green-border-focus">
+            <div class="input-group-prepend">
+             <span class="input-group-text" id="stdin-box">Input</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+          </div>
+        </div>
+        <div class="row" style="margin-top: 15px">
+          <div class="input-group input-group-lg green-border-focus">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="stdout-box">Output</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="padding">
     <footer class="container-fluid text-center">
-      <div class="col-sm-4">
+      <div class="row">
+        <div class="col-sm-4">
         <h3>Contact Us</h3>
         <br>
         <h4 class="lead">Address:<br>Suite #, Street name<br>City,State-666666</h4>
       </div>
       <div class="col-sm-4">
         <h3>Connect with us</h3>
-      
+        <a href="#" class="fa fa-facebook"></a>
       </div>
       <div class="col-sm-4">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS5i8zav54BWskHG4mmM17f6avpbvJMxZ3TqqiQ91lTRO_bV1IA"></a>
       </div>
+      </div>
     </footer>
 
+</div>
 
-  </body>
+
+<!-- //bootstrap-modal-pop-up --> 
+<!-- js -->
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <!-- for bootstrap working -->
+  <script src="js/bootstrap.js"></script>
+  <!-- //for bootstrap working -->
+<!-- //js -->
+<!-- //here starts scrolling icon -->
+<script src="js/SmoothScroll.min.js"></script>
+  <script type="text/javascript" src="js/move-top.js"></script>
+  <script type="text/javascript" src="js/easing.js"></script>
+  <!-- here stars scrolling script -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      /*
+        var defaults = {
+        containerID: 'toTop', // fading element id
+        containerHoverID: 'toTopHover', // fading element hover id
+        scrollSpeed: 1200,
+        easingType: 'linear' 
+        };
+      */
+                
+      $().UItoTop({ easingType: 'easeOutQuart' });
+                
+      });
+  </script>
+  <!-- //here ends scrolling script -->
+<!-- //here ends scrolling icon -->
+
+<!-- scrolling script -->
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $(".scroll").click(function(event){   
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+    });
+  });
+</script> 
+<!-- //scrolling script -->
+<!-- //Calendar -->
+                      <script src="js/jquery-ui.js"></script>
+                        <script>
+                            $(function() {
+                            $( "#datepicker,#datepicker1" ).datepicker();
+                            });
+                        </script>
+                <!-- //Calendar -->
+<!--script-->
+<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+        <script type="text/javascript">
+
+          $(document).ready(function () {
+              $('#horizontalTab').easyResponsiveTabs({
+                  type: 'default', //Types: default, vertical, accordion           
+                  width: 'auto', //auto or any width like 600px
+                  fit: true   // 100% fit in a container
+              });
+          });
+        
+</script> 
+<script type="text/javascript">
+    var editor = CodeMirror.fromTextArea(document.getElementById("editor-box"), {
+        lineNumbers: true,
+        matchBrackets: true,
+        continueComments: "Enter",
+        extraKeys: {"Ctrl-Q": "toggleComment"}
+    });
+</script>
+</body>
 </html>
